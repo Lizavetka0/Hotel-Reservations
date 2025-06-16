@@ -79,6 +79,9 @@ df['season'] = pd.cut(
 Лучшие признаки по RFE: ['no_of_adults', 'no_of_weekend_nights', 'no_of_week_nights', 'type_of_meal_plan', 'lead_time', 'arrival_month', 'arrival_date', 'market_segment_type', 'avg_price_per_room', 'no_of_special_requests', 'lenght_of_stay', 'total_guests', 'type_of_accommodation', 'booking_type', 'season']
 ### Feature importance (методы оценки значимости признаков)
 С помощью Random Forest определена важность признаков. Топ-15 важных признаков: ['lead_time', 'avg_price_per_room', 'no_of_special_requests', 'arrival_date', 'arrival_month', 'market_segment_type', 'booking_type', 'lenght_of_stay', 'no_of_week_nights', 'season', 'no_of_weekend_nights', 'type_of_meal_plan', 'type_of_accommodation', 'room_type_reserved_Room_Type 4', 'no_of_adults']
+### Итоговые признаки
+Итоговое количество отобранных признаков: 13
+Итоговые отобранные признаки: {'avg_price_per_room', 'no_of_week_nights', 'arrival_date', 'booking_type', 'type_of_accommodation', 'season', 'lead_time', 'no_of_adults', 'no_of_weekend_nights', 'no_of_special_requests', 'market_segment_type', 'type_of_meal_plan', 'arrival_month'}
 ## Baseline - логистическая регрессия
 В коде используются библиотеки для анализа данных и построения моделей машинного обучения. matplotlib и seaborn отвечают за визуализацию данных с помощью графиков. pandas используется для удобной работы с табличными данными, а numpy - для численных вычислений. sklearn предоставляет инструменты для предварительной обработки данных, разделения на обучающую и тестовую выборки, выбора оптимальных параметров модели, обучения моделей (например, логистической регрессии) и оценки их качества. Для работы с несбалансированными данными применяется библиотека imblearn, в частности метод SMOTE.
 
