@@ -273,7 +273,7 @@ param_grid = {
 
 Выводим на экран метрики, оценивающие качество предсказаний модели на тестовой выборке.
 ````
- precision    recall  f1-score   support
+                precision    recall  f1-score   support
 
            0       0.84      0.82      0.83      3168
            1       0.91      0.93      0.92      6616
@@ -323,7 +323,7 @@ weighted avg       0.89      0.89      0.89      9784
 
 Выводится оценка качества предсказаний модели, полученных на тестовой выборке. Выводится общая доля правильных ответов (accuracy) и более подробный отчет, включающий precision, recall, F1-score и support для каждого класса.
 ````
-precision    recall  f1-score   support
+                precision    recall  f1-score   support
 
            0       0.85      0.83      0.84      3168
            1       0.92      0.93      0.92      6616
